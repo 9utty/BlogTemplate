@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "dunggeunmo-bold";
+  @apply md:text-[20px] text-[16px] lg:text-[22px] overflow-y-scroll md:overflow-y-hidden w-[100vw];
+}
+
+body {
+  margin: 0;
+  font-family: "dunggeunmo-bold";
+  background: #008080;
+  @apply w-[100vw];
+}
+
+@font-face {
+  font-family: "dunggeunmo";
+  src: url("../../public/DungGeunMo.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "dunggeunmo-bold";
+  src: url("../../public/DungGeunMo.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* 스크롤바의 너비 설정 */
+  height: 0px; /* 스크롤바의 높이 설정 */
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0); /* 스크롤 트랙의 배경 색상 설정 */
+  border-radius: 8px; /* 스크롤 트랙의 모서리 둥그렇게 처리 */
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cecece; /* 스크롤바의 색상 */
+  border-radius: 8px; /* 스크롤바의 모서리 둥그렇게 처리 */
+}
+
+span {
+  font-family: "dunggeunmo-bold";
+}
+
+article ol {
+  font-family: "dunggeunmo-bold";
+  font-size: 1.1rem;
+  list-style: decimal;
+  @apply m-6;
+}
+
+article hr {
+  @apply my-10 px-8;
+}
+
+article li {
+  font-family: "dunggeunmo-bold";
+  font-size: 1rem;
+  @apply m-6 mt-6 mb-3;
+}
+
+article ul li {
+  font-family: "dunggeunmo-bold";
+  font-size: 1rem;
+  list-style: square;
+  @apply m-6 mt-6 mb-3;
+}
+
+article ul li ul li {
+  font-family: "dunggeunmo-bold";
+  font-size: 0.9rem;
+  list-style: circle;
+  @apply m-6 mt-6 mb-3;
+}
+
+article ul li ul li ul li {
+  font-family: "dunggeunmo";
+  font-size: 0.9rem;
+  list-style: disc;
+  @apply m-6 mt-6 mb-3 font-normal;
+}
+
+article pre code {
+  @apply rounded-lg;
+}
+
+article h1 {
+  font-family: "dunggeunmo-bold";
+  font-size: 2.1rem;
+  margin: 0;
+  padding: 0;
+  @apply mt-20 mb-10;
+}
+
+article h2 {
+  font-family: "dunggeunmo-bold";
+  font-size: 1.7rem;
+  margin: 0;
+  padding: 0;
+  @apply mt-20 mb-8;
+}
+
+article h3 {
+  font-family: "dunggeunmo-bold";
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  @apply mt-20 mb-8;
+}
