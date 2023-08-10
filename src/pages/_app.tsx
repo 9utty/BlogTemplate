@@ -14,12 +14,12 @@ export default function App({
       <ThemeProvider theme={original}>
         <Head>
           <meta charSet="utf-8" />
-          <title>구티의 블로그</title>
+          <title>{process.env.NEXT_PUBLIC_BLOG_TITLE}</title>
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="https://user-images.githubusercontent.com/86397600/236520751-cbe5955c-0ec5-46d8-bc42-130ef3c62a1f.png"
+            href={`${process.env.NEXT_PUBLIC_BLOG_IMAGE}`}
           />
         </Head>
         <div style={{ height: "100vh" }}>
