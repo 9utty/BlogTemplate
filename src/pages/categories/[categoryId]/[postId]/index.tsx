@@ -12,6 +12,7 @@ import Utterances from "@/components/common/utterances";
 import TextTag from "@/components/post/TextTag";
 import Image from "next/image";
 import NotFound from "@/pages/404";
+import { Head } from "next/document";
 
 type Props = {
   meta: Meta;
@@ -63,6 +64,17 @@ const Post = ({ meta, compiledSource }: Props) => {
 
   return (
     <>
+      <Head>
+        <meta charSet="utf-8" />
+        <title>{`${process.env.NEXT_PUBLIC_BLOG_TITLE}: ${meta.title}`}</title>
+        <meta name="description" content={meta.title} />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href={`${process.env.NEXT_PUBLIC_BLOG_IMAGE}`}
+        />
+      </Head>
       <CustomModal modalName={meta.title} width="80vw" height="70vh" left="10%">
         <div
           className="post"
