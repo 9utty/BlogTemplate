@@ -136,3 +136,15 @@ NEXT_PUBLIC_BLOG_URL="<블로그 주소>" /* ex: https://9utty.world */
 2. 배포시 npm run build를 실행할때 sitemap도 같이 생성됩니다
 
 3. 생성된 sitemap URL을 GoogleSearchConsol에 등록할 수 있습니다
+
+# Sitemap 사용법
+
+- google Search console에 url을 입력하시고 사용자 인증을 먼저 받으세요!
+
+- 그 이후에 sitemap을 제출하는 곳이 있습니다 거기에 꼭!
+
+```
+<yourBlogURL>/api/sitemap.xml
+```
+
+- 위에 형식으로 제출해주세요! 그러면 생성된 post들에 색인이 생성이 됩니다!
